@@ -5,21 +5,6 @@ class HomeController extends GetxController {
   TextEditingController nameController = TextEditingController();
   TextEditingController palindromeController = TextEditingController();
 
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
   checkPalindrome() {
     String text = palindromeController.text;
     String reversedText = text.trim().split('').reversed.join();
