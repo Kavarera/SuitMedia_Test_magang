@@ -2,6 +2,10 @@ import 'package:get/get.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/second_screen/bindings/second_screen_binding.dart';
+import '../modules/second_screen/views/second_screen_view.dart';
+import '../modules/third_screen/bindings/third_screen_binding.dart';
+import '../modules/third_screen/views/third_screen_view.dart';
 
 part 'app_routes.dart';
 
@@ -15,6 +19,16 @@ class AppPages {
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.SECOND_SCREEN,
+      page: () => const SecondScreenView(),
+      binding: SecondScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.THIRD_SCREEN,
+      page: () => const ThirdScreenView(),
+      binding: ThirdScreenBinding(),
     ),
   ];
 }
