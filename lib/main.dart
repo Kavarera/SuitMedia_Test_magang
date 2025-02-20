@@ -11,6 +11,7 @@ void main() async {
   await sharedPrefService.init();
   runApp(
     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Application",
       initialBinding: SharedPrefBinding(),
       initialRoute: AppPages.INITIAL,
