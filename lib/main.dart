@@ -13,7 +13,6 @@ void main() async {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialBinding: SharedPrefBinding(),
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),
